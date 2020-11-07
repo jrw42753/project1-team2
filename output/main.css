@@ -1,0 +1,139 @@
+/*colors*/
+
+:root{
+	--background: #862009;
+	--container: #F2EACF;
+	--card: #C1AA85;
+	--font: #2B2118;
+	--shadow: #b8c2da;
+	--alternate: #096f86;
+}
+
+/*main*/
+body {
+    background-image: url("../src/main/resources/imgs/cinema.jpg");
+    background-color: var(--background);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    color: #fff;
+    font-family: verdana, sans-serif;
+}
+
+.container {
+    display: block;
+}
+
+/*heading styles*/
+.heading {
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+}
+
+.heading h3 {
+    color: var(--font);
+    font-size: 25px;
+    margin: 10px 5px;
+    font-style: italic;
+}
+
+.heading h1 {
+    color: var(--font);
+    font-size: 4em;
+    margin: 10px 0px;
+}
+
+/* START card container css */
+.card-container {
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.card-container ul {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 230px;
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 0px;
+}
+
+.card-container ul li {
+    background: var(--alternate);
+    list-style: none;
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease;
+    margin: 25px;
+   /* padding: 25px;*/
+}
+
+.card-container ul li:hover {
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.card-container ul li:active {
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.card-container ul li i {
+    font-size: 50px;
+}
+
+.card-container ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card-container ul li span {
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.icon-table {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-table i {
+    padding: 0px 8px;
+}
+
+/* END card container css */
+
+@media only screen and (max-width: 750px) {
+.heading {
+    font-size: 2vw;
+    }
+.card-container ul {
+  display: block;
+}
+.card-container ul li {
+  height: 55px;
+  margin: 20px;
+}
+.card-container ul li a i {
+display: none;
+}
+
+.card-container ul li span {
+    padding: 10px;
+    font-size: 28px;
+}
+}
