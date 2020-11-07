@@ -11,7 +11,7 @@
 
 /*main*/
 body {
-    background-image: url("../src/main/resources/imgs/cinema.jpg");
+    background-image: url("cinema.jpg");
     background-color: var(--background);
     background-position: center top;
     background-repeat: no-repeat;
